@@ -14,6 +14,13 @@ public class MyString {
         System.out.println(contains("personality", "son")); // true
         System.out.println(contains("personality", "dad")); // false
         System.out.println(contains("resignation", "sign")); // true
+
+        System.out.println("Test");
+        System.out.println(contains("baba yaga", "baba"));
+        System.out.println(contains("baba yaga", ""));
+        System.out.println(contains("baba yaga", "John Wick is the baba yaga"));
+        System.out.println(contains("baba yaga", "Yaga"));
+        System.out.println(contains("baba yaga", "babayaga"));
     }
 
     /** Returns the lowercase version of the given string. */
@@ -48,6 +55,8 @@ public class MyString {
                         break;
                     }
                 }
+                if (contains)
+                    return contains;
             }
         }
         return contains;
